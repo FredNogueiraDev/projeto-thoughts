@@ -9,10 +9,10 @@ const app = express();
 const conn = require('./db/conn');
 
 //models 
-// const Tought = require("./models/Tought");
+const Tought = require("./models/Tought");
+const User = require("./models/User");
 
-//routes
-
+// routes
 app.engine("handlebars", exphbs.engine());
 app.set("view engine", "handlebars");
 
@@ -63,7 +63,7 @@ app.use((req, res, next) => {
 // app.get("/", ToughtController.showToughts);
 
 conn
-    .sync()
+    .sync({force: true})
     .then(() => {
         app.listen(3000)
     })
