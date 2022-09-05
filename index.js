@@ -58,7 +58,7 @@ app.use(express.static("public"));
 
 //set session to res
 app.use((req, res, next) => {
-    console.log(req.session.userid);
+    // console.log(req.session.userid);
 
     if(req.session.userid){
         res.locals.session = req.session;
@@ -74,7 +74,8 @@ app.use('/', authRoutes)
 app.get("/", ToughtController.showToughts);
 
 conn
-    .sync({force: true})
+    // .sync({force: true})
+    .sync()
     .then(() => {
         app.listen(3000)
     })
