@@ -164,6 +164,9 @@ form input[type='submit']:hover,
     border-color: #fff;
     margin: 0 .5em;
 }
+.dashboard a{
+    color: #f6982d;
+}
 
 /* FOOTER */
 footer {

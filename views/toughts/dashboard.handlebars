@@ -1,7 +1,7 @@
 <div class="dashboard">
     <div class="title-container">
         <h1>Dashboard</h1>
-        <a href="/toughts/add" class="btn">Criar Pensamento</a>
+        <a href="/toughts/add" class="btn">Criar Tought</a>
     </div>
     <h2>Meus toughts</h2>
     <ul>
@@ -18,4 +18,7 @@
         </li>
         {{/each}}
     </ul>
+    {{#if emptyToughts}}
+        <p>Não há nada por aqui... crie seu primeiro pensamento <a href="/toughts/add">por aqui!</a></p>
+    {{/if}}
 </div>
