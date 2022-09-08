@@ -3,5 +3,10 @@
         <h1>dashboard</h1>
         <a href="/toughts/add" class="btn">Criar Pensamento</a>
     </div>
-    <h2>Seus pensamentos</h2>
+    <h2>Seus toughts</h2>
+    <ul>
+        {{#each toughts}}
+        <li>{{this.title}}</li>
+        {{/each}}
+    </ul>
 </div>
