@@ -2,9 +2,11 @@
 
 O projeto Toughts é uma rede social que se baseia no que os usuários estão pensando, os pensamentos ficam expostos na página HOME e todos podem ver.
 
+![Tought](https://user-images.githubusercontent.com/102488476/189250097-1f98fdac-c7ba-4aed-85e3-304ea24c7ec2.png)
+
 Os pensamentos são chamados de toughts, todos eles ficam salvos em um banco de dados MySQL, além das contas dos usuários com nome, email e senha que é criptografada com auxilio do bcrypt.
 
-[Toughts.webm](https://user-images.githubusercontent.com/102488476/189249054-8839b3dc-5f7f-4277-8e65-bd8992bd3b14.webm)
+![Toughts](https://user-images.githubusercontent.com/102488476/189249937-daa5e97f-cd3c-4ead-9dad-265aca40c42e.gif)
 
 No projeto utilizei express, sequelize, handlebars, MySQL e mais…
 
