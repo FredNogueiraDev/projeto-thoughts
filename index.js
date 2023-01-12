@@ -20,7 +20,7 @@ const authRoutes = require('./routes/authRoutes')
 const ToughtController = require('./controllers/ToughtController')
 
 //template engine
-app.engine("handlebars", exphbs.engine());
+app.engine("handlebars", exphbs());
 app.set("view engine", "handlebars");
 
 app.use(
