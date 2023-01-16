@@ -1,6 +1,6 @@
 <div class="home-header">
     {{#if search}}
-    <h1>Você está buscando por: <span>{{search}}</span></h1>
+    <h1>Está buscando por: <span>{{search}}</span></h1>
         {{#if toughtsQty}}
             <p>Foram encontrados <span>{{toughtsQty}}</span> pensamentos!</p>
         {{else}}
@@ -10,8 +10,8 @@
     <h1>Todos os Pensamentos</h1>
     {{/if}}
     <form action="/" method="GET" class="search">
-        <input type="text" name="search" placeholder="Está buscando por algo?">
-        <input type="submit" class="btn" value="Buscar">
+        <input class="search-input" type="text" name="search" placeholder="Está buscando por algo?">
+        <button class="btn-search" type="submit"><i class="icon bi bi-search"></i></button>
     </form>
     <div class="order-container">
         <span>Ordenar por:</span>

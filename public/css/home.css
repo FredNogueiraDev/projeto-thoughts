@@ -1,0 +1,119 @@
+.home-header {
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+  
+.home-header h1 {
+    margin-bottom: 1em;
+    color: var(--cor-bg-primaria);
+}
+  
+.home-header span {
+    color: var(--cor-bg-primaria);
+}
+  
+.home-header p {
+    margin-bottom: 1.2em;
+}
+  
+.home-header form {
+    margin-bottom: 1em;
+}
+  
+.home-header input[type="text"] {
+    border: none;
+    /* color: var(--cor-primaria); */
+    border-bottom: 1px solid var(--cor-bg-primaria);
+    padding: 0.5em;
+    margin-right: 1em;
+    width: 60%;
+}
+
+.home-header input[type="text"]:focus{
+    border-bottom: 2px solid var(--cor-bg-primaria-hover);
+    outline: none;
+    
+}
+
+.home-header input::placeholder {
+    color: var(--cor-primaria);
+}
+.home-header input[name='search']{
+    font-size: 17px;
+}
+  
+.order-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    margin: 0 auto 1em;
+}
+  
+.order-container span {
+    color: var(--cor-primaria);
+}
+  
+.order-container form {
+    margin: 0;
+}
+  
+.order-container button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+  
+.order-container button:hover,
+.order-container a:hover {
+    color: var(--cor-bg-primaria);
+}
+  
+.order-container span,
+.order-container button,
+.order-container a {
+    margin: 0 10px;
+}
+
+.btn-search{
+    background-color: transparent;
+    border: 0;
+    /* width: 30px;
+    height: 30px; */
+    /* height:302px;
+    width:32px; */
+    cursor: pointer;
+    position:relative;
+    /* z-index: 3; */
+
+}
+.btn-search .icon{
+    /* width: 30px;
+    height:302px; */
+    font-size:1.5em ;
+    color: var(--cor-bg-primaria);
+}
+  
+.order-container i {
+    color: var(--cor-bg-primaria);
+}
+  
+.toughts-container figure {
+    border-bottom: 1px solid var(--cor-primaria);
+    padding: 0.5em;
+    max-width: 50%;
+    margin: 0 auto 1em;
+}
+  
+.toughts-container blockquote {
+    font-style: italic;
+    font-size: 2em;
+    margin-bottom: 0.4em;
+}
+  
+.toughts-container span {
+    color: var(--cor-bg-primaria);
+}

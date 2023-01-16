@@ -1,6 +1,6 @@
 {
   "name": "projeto-toughts",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "Sistema para publicação de pensamentos, utilizando express, sequelize, handlebars, MySQL e mais...",
   "main": "index.js",
   "scripts": {

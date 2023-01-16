@@ -5,24 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toughts</title>
-    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
 <body>
     <nav id="navbar">
         <a href="/" id="logo">
-            <img src="/img/toughts_logo.png" alt="Toughts">
+            <img src="/img/new_logo.png" alt="Toughts">
         </a>
         <ul>
-            <li><a href="/">Pensamentos</a></li>
+            <li><a class="hover-border" href="/">HOME</a></li>
             {{!-- URLs após autenticação --}}
             {{#if session.userid}}
-                <li><a href="/toughts/dashboard">Dashboard</a></li>
-                <li><a href="/logout">Sair</a></li>
+                <li><a class="hover-border" href="/toughts/dashboard">DASHBOARD</a></li>
+                <li><a class="hover-border" href="/logout">SAIR</a></li>
             {{else}}
-                <li><a href="/login">Entrar</a></li>
-                <li><a href="/register">Registrar</a></li>
+                <li><a class="hover-border" href="/login">ENTRAR</a></li>
+                <li><a class="hover-border" href="/register">REGISTRAR</a></li>
             {{/if}}
         </ul>
     </nav>
@@ -37,7 +37,7 @@
     {{{body}}}
     </div>
     <footer>
-        <p>Frederico Nogueira | <span> Toughts</span>  &copy; 2022 </p>
+        <p>Frederico Nogueira | <span> Toughts</span>  &copy; 2023 </p>
     </footer>
 </body>
 </html>

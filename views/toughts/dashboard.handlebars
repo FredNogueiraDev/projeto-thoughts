@@ -1,18 +1,17 @@
 <div class="dashboard">
     <div class="title-container">
         <h1>Dashboard</h1>
-        <a href="/toughts/add" class="btn">Criar Tought</a>
+        <a href="/toughts/add" class="btn-tought">Criar Tought</a>
     </div>
-    <h2>Meus toughts</h2>
     <ul>
         {{#each toughts}}
         <li>
             <span class="label">{{this.title}}</span>
             <span class="actions">
-                <a href="/toughts/edit/{{this.id}}" class="btn">Editar</a>
+                <a href="/toughts/edit/{{this.id}}" class="btn-action">Editar</a>
                 <form action="/toughts/remove" method="POST">
                 <input type="hidden" name="id" value="{{this.id}}">
-                <input type="submit" value="Excluir" class="btn">
+                <input type="submit" value="Excluir" class="btn-action">
                 </form>
             </span>
         </li>

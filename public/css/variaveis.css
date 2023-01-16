@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+:root {
+   --fonte-principal: Roboto, Helvetica;
+
+   --cor-bg-primaria: #F6982D;
+   --cor-bg-branco: #FFF;
+
+   --cor-primaria: #232323;
+   --cor-branca: #FFF;
+   --cor-titulo-laranja: #F6982D;
+
+   --cor-branca-hover: rgba(255, 255, 255, 0.845);
+   --cor-bg-primaria-hover: #f58607;
+}

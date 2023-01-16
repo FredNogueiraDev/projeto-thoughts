@@ -1,0 +1,37 @@
+.tought-form-container{
+    max-width: 450px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.tought-form-container a{
+    color: var(--cor-bg-primaria);
+}
+.tought-form-container a:hover{
+    color: var(--cor-bg-primaria-hover);
+}
+.tought-form-container h1{
+    margin: 1em 0;
+    color: var(--cor-bg-primaria);
+    border-left: 4px solid var(--cor-bg-primaria);
+    padding: 0.3em;
+}
+.form-control label[for='title']{
+    margin-bottom: .5em;
+    font-weight: bold;
+}
+.btn-edit{
+    background-color: var(--cor-bg-primaria);
+    color: var(--cor-branca);
+    border: 2px solid var(--cor-bg-primaria);
+    padding: 8px;
+    width: 100%;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn-edit:hover{
+    background-color: var(--cor-bg-primaria-hover);
+}

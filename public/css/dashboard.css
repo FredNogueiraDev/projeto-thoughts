@@ -1,0 +1,64 @@
+.title-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+.title-container h1{
+    border-left: 4px solid #f6982d;
+    padding: 10px;
+}
+.btn-tought{
+    background-color: transparent;
+    color: var(--cor-bg-primaria);
+    border: 2px solid var(--cor-bg-primaria);
+    padding: .5em .7em;
+    margin-bottom: 1em;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: .2s;
+}
+.btn-tought:hover{
+    background-color: var(--cor-bg-primaria);
+    color: var(--cor-branca) ;
+}
+
+.dashboard ul {
+    list-style: none;
+}
+.dashboard li {
+    padding: 12px;
+    border-bottom: 1px solid var(--cor-bg-primaria);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.dashboard .label{
+    font-weight: bold;
+    color: var(--cor-primaria);
+}
+.dashboard .actions{
+    display: flex;
+}
+.dashboard .actions .btn-action{
+    background-color: var(--cor-bg-primaria);
+    color: var(--cor-branca);
+    border: 2px solid var(--cor-bg-primaria);
+    padding: .3em .5em;
+    margin-bottom: 1em;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: .2s;   
+    margin: 0 .5em;
+}
+.dashboard .actions .btn-action:hover{
+    background-color: var(--cor-bg-primaria-hover);
+}
+.dashboard a{
+    color: #f6982d;
+}

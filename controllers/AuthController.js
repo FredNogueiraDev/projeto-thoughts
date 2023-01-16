@@ -14,7 +14,7 @@ module.exports = class AuthController {
         const user = await User.findOne({where: {email: email}})
 
         if(!user){
-            req.flash('message', 'Usuário ou senha incorretos!')
+            req.flash('message', 'USUÁRIO OU SENHA INCORRETOS!')
             res.render('auth/login')
 
             return
@@ -25,7 +25,7 @@ module.exports = class AuthController {
 
 
         if(!passwordMatch){
-            req.flash('message', 'Usuário ou senha incorretos!')
+            req.flash('message', 'USUÁRIO OU SENHA INCORRETOS!')
             res.render('auth/login')
 
             return
@@ -49,7 +49,7 @@ module.exports = class AuthController {
         
         // password match validation
         if(password !== confirmpassword){
-            req.flash('message', 'As duas senhas devem ser iguais!')
+            req.flash('message', 'AS DUAS SENHAS DEVEM SER IGUAIS!')
             res.render('auth/register')
 
             return
@@ -59,7 +59,7 @@ module.exports = class AuthController {
         const checkIfUserExists = await User.findOne({where: {email: email}})
 
         if(checkIfUserExists){
-            req.flash('message', 'Este email já está em uso!')
+            req.flash('message', 'ESTE E-MAIL ESTÁ SENDO USADO')
             res.render('auth/register')
 
             return
@@ -81,7 +81,7 @@ module.exports = class AuthController {
             // initialize session
             req.session.userid = createdUser.id
 
-            req.flash('message', 'Obrigado por se cadastrar no nosso site!')
+            req.flash('message', 'OBRIGADO POR SE CADASTRAR NO NOSSO SITE!')
             
             req.session.save(() => {
                 res.redirect('/')
