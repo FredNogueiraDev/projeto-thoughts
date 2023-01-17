@@ -72,7 +72,7 @@ module.exports = class ToughtController {
         try {
             await Tought.create(tought)
     
-            req.flash('message', 'TOUGHT CRIADO COM SUCESSO!')
+            req.flash('message', 'THOUGHT CRIADO COM SUCESSO!')
     
             req.session.save(() => {
                 res.redirect('/toughts/dashboard')
@@ -89,7 +89,7 @@ module.exports = class ToughtController {
         try {
             await Tought.destroy({where: {id: id, UserId: UserId}})
 
-            req.flash('message', 'TOUGHT REMOVIDO COM SUCESSO!')
+            req.flash('message', 'THOUGHT REMOVIDO COM SUCESSO!')
 
             req.session.save(() => {
                 res.redirect('/toughts/dashboard')
@@ -116,7 +116,7 @@ module.exports = class ToughtController {
 
         try {
             await Tought.update(tought, {where: {id:id}})
-            req.flash('message', 'TOUGHT EDITADO COM SUCESSO!')
+            req.flash('message', 'THOUGHT EDITADO COM SUCESSO!')
     
             req.session.save(() => {
                 res.redirect('/toughts/dashboard')

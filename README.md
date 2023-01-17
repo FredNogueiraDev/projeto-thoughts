@@ -4,7 +4,7 @@ O projeto Toughts é uma rede social que se baseia no que os usuários estão pe
 
 Os pensamentos são chamados de toughts, todos eles ficam salvos em um banco de dados MySQL, além das contas dos usuários com nome, email e senha que é criptografada com auxilio do bcrypt.
 
-![Tought](https://user-images.githubusercontent.com/102488476/189250097-1f98fdac-c7ba-4aed-85e3-304ea24c7ec2.png)
+![Thought](https://user-images.githubusercontent.com/102488476/189250097-1f98fdac-c7ba-4aed-85e3-304ea24c7ec2.png)
 
 No projeto utilizei express, sequelize, handlebars, MySQL e mais…
 
@@ -25,7 +25,7 @@ MySQL 8.0.27
 - Criação do banco de dados
 
 ```html
-CREATE SCHEMA `toughts` ;
+CREATE SCHEMA `thoughts` ;
 ```
 
 - Instalar dependências
